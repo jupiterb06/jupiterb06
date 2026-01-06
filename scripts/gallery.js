@@ -37,13 +37,15 @@ $(".gallery img").click(function (e) {
 
 $(".gallery img").hover(function (e) {
     $(e.target).animate({
-        borderRadius: '20px'
+        borderRadius: '20px',
+        opacity: '0.3'
     });        // over
 
 }, function (e) {
     // out
         $(e.target).animate({
-        borderRadius: '0px'
+        borderRadius: '0px',
+        opacity: '1'
     });  
 }
 );

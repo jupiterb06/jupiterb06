@@ -210,8 +210,8 @@ footer p{
 
 .modal{
     background-color: white;
-    width: 80%;
-    max-height: 80%;
+    width: 90%;
+    max-height: 90%;
     padding: 30px;
 
 
@@ -299,12 +299,10 @@ footer p{
     overflow:hidden;    
     cursor:pointer;
 
-}
-
-.gallery img:hover{
-    /* border-radius: 20px; */
 
 }
+
+
 
 .hidden{
     display:none !important;
