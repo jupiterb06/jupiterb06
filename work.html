@@ -35,7 +35,7 @@
 
 		</div>
 		<nav>
-			<menu>
+			<menu id="global-nav">
 				<li><a class="current-page" href="work.html">work</a></li>
 				<li><a href="about.html">about</a></li>
 				<li><a href="cv.html">cv</a></li>
@@ -47,145 +47,218 @@
 	<main>
 		<section id="work-text">
 			<h2>work</h2>
-			<div id="jump-to-buttons">
-				<a class="btn" href>painting/drawing</a>
-				<a class="btn" href>illustration</a>
-				<a class="btn" href>graphic design</a>
-				<a class="btn" href>video</a>
-				<a class="btn" href>interactive</a>
-			</div>
+			<nav>
+				<h3>view section...</h3>
+				<menu id="jump-to-section">
+					<li><a id="painting-drawing-btn" href="#painting-drawing"
+							data-section="#painting-drawing">painting/drawing</a></li>
+					<li><a id="illustration-btn" href="#illustration" data-section="#illustration">illustration</a></li>
+					<li><a id="graphic-design-btn" href="#graphic-design" data-section="#graphic-design">graphic
+							design</a></li>
+					<li><a id="video-btn" href="#video" data-section="#video">video</a></li>
+					<li><a id="interactive-btn" href="#interactive" data-section="#interactive">interactive</a></li>
+				</menu>
+
+			</nav>
 		</section>
 
-		<section id="painting-drawing">
-			<h3>painting and drawing</h3>
+		<section id="work-content">
 
-			<div class="gallery">
-				<img src="images/drawing-painting/were-so-over.jpg"
-					data-title="it's so over (we're so back(we are closely monitoring the situation))"
-					data-size="40 in. x 32 in." data-medium="acrylic on canvas" data-desc=""
-					alt="Three versions of a figure sit in a bathroom. One sits on the counter, talking on a rotary phone. They are surrounded by 
+			<section id="painting-drawing">
+				<h3>painting and drawing</h3>
+
+				<div class="gallery">
+					<img src="images/drawing-painting/were-so-over.jpg"
+						data-title="it's so over (we're so back(we are closely monitoring the situation))"
+						data-size="40 in. x 32 in." data-medium="acrylic on canvas" data-desc=""
+						alt="Three versions of a figure sit in a bathroom. One sits on the counter, talking on a rotary phone. They are surrounded by 
 						an open box with a sex toy inside, a vial of testosterone, and a sharps bin. Behind them is a mirror, where they are reflected 
 						using the sex toy. In the background, the figure sits on the toilet with their head in their hands, holding the rotary phone. Light streams in from behind the mirror.">
-				<img src="images/drawing-painting/sacred_space.jpg" data-title="sacred space (2025)"
-					data-size="24 in. x 18 in." data-medium="acrylic on canvas" data-desc="" alt="A blue and pink painting of a classical-looking structure, with an elevated bathroom inside. A figure stands outside the structure, 
+					<img src="images/drawing-painting/sacred_space.jpg" data-title="sacred space (2025)"
+						data-size="24 in. x 18 in." data-medium="acrylic on canvas" data-desc="" alt="A blue and pink painting of a classical-looking structure, with an elevated bathroom inside. A figure stands outside the structure, 
 						gazing in.">
 
-				<img src="images/drawing-painting/diary-5-15.jpg" data-title="sacred space (2025)"
-					data-size="24 in. x 18 in."
-					data-medium="watercolor, colored pencil, paint pen, stickers, and rhinestones on watercolor paper"
-					data-desc=""
-					alt="A collage of watercolor paintings, pencil drawings, stickers, and rhinestones. written on the 
+					<img src="images/drawing-painting/diary-5-15.jpg" data-title="sacred space (2025)"
+						data-size="24 in. x 18 in."
+						data-medium="watercolor, colored pencil, paint pen, stickers, and rhinestones on watercolor paper"
+						data-desc=""
+						alt="A collage of watercolor paintings, pencil drawings, stickers, and rhinestones. written on the 
 					right side of the image is a diary entry, reading:
 					
 					i was thinking about beauty and how to me everything is so beautiful and how i started looking for beauty and wonder and aesthetic and artistry as a standin for the intrinsic happiness that i'm supposed to feel. a lover let me down retroactively so i asked a friend what is was he said about artists and love and he said that our work consumes and infests us and turns us into observers, outsiders to our own lives who see the artistry before and above all else. THESE THOUGHTS RELATE SOMEHOW. i'm writing this on my way home to california which is feeling less and less like home and i think it's because i've come to associate home with freedom and peace which are two things i struggle to get in that house, where i hide my testosterone and shave my armpits. i'm lonely at home. maybe i don't have the freedom not to be or because i came out lonely and now that's just the aura of that house. i think my whole family likes parties because we all came out lonely and confused and now we need a pretense to connect and beauty to hide our chains.">
-				<img src="images/drawing-painting/and-just-plain-tasteless-really.jpg"
-					data-title="and just plain tasteless, really (2025)" data-size="18 in. x 24 in."
-					data-medium="acrylic, paint pen, glitter, cardstock on drawing paper" data-desc="" alt="A nude figure painted in shades of iridescent pink. The figure is visible from the nose to their thigh, and has long black armpit
+					<img src="images/drawing-painting/and-just-plain-tasteless-really.jpg"
+						data-title="and just plain tasteless, really (2025)" data-size="18 in. x 24 in."
+						data-medium="acrylic, paint pen, glitter, cardstock on drawing paper" data-desc="" alt="A nude figure painted in shades of iridescent pink. The figure is visible from the nose to their thigh, and has long black armpit
 						hair. The image has a black scalloped border. The figure is surrounded by cartoonish silhouettes of penises, as well as the words 'Cheap and Vulgar'.
 						Several flowers are drawn off to the side, vaguely resembling vaginas.">
 
-				<img src="images/drawing-painting/cable-unmanagement.jpg" data-title="cable unmanagement #2 (2025)"
-					data-size="18 in. x 24 in." data-medium="gouache on watercolor paper"
-					data-desc="part 1/2 of my 'cable unmanagement' diptych" alt="A server room painted in perspective, using shades of purple, pink, and blue. The cables are tangled and flowing,
+					<img src="images/drawing-painting/cable-unmanagement.jpg" data-title="cable unmanagement #2 (2025)"
+						data-size="18 in. x 24 in." data-medium="gouache on watercolor paper"
+						data-desc="part 1/2 of my 'cable unmanagement' diptych" alt="A server room painted in perspective, using shades of purple, pink, and blue. The cables are tangled and flowing,
 						resembling hair. At the end of the room, there is a large grey rectangle.">
 
-				<img src="images/drawing-painting/cable-unmanagement-2.jpg" data-title="cable unmanagement #2 (2025)"
-					data-size="18 in. x 24 in." data-medium="gouache on watercolor paper"
-					data-desc="part 2/2 of my 'cable unmanagement' diptych" alt="A figure painted in light blue and pink. They are curled up in the fetal position and wrapped up in electrical cables, 
+					<img src="images/drawing-painting/cable-unmanagement-2.jpg"
+						data-title="cable unmanagement #2 (2025)" data-size="18 in. x 24 in."
+						data-medium="gouache on watercolor paper"
+						data-desc="part 2/2 of my 'cable unmanagement' diptych" alt="A figure painted in light blue and pink. They are curled up in the fetal position and wrapped up in electrical cables, 
 						some of which are poking into their skin. Several
 						indeterminate pieces of hardware seem to be mounted to the figure as well. ">
 
-				<img src="images/drawing-painting/seeking-bears-1.jpg" data-title="seeking trans bears #1 (2025)"
-					data-size="18 in. x 24 in." data-medium="acrylic and gel medium on canvas"
-					data-desc="part 1/2 of my 'seeking trans bears' diptych" alt="A painting of a teddy bear covered in saran wrap. The bear has a pair of heart shaped sungnlasses on top of its head, and
+					<img src="images/drawing-painting/seeking-bears-1.jpg" data-title="seeking trans bears #1 (2025)"
+						data-size="18 in. x 24 in." data-medium="acrylic and gel medium on canvas"
+						data-desc="part 1/2 of my 'seeking trans bears' diptych" alt="A painting of a teddy bear covered in saran wrap. The bear has a pair of heart shaped sungnlasses on top of its head, and
 						a pearl necklace  around it. the necklace is arranged to form the outline of a penis on the floor by the bear. At the tip of the outline
 						is a small white candy heart, reading 'XOXO'.">
 
-				<img src="images/drawing-painting/gateway.jpg" data-title="gateway (2024)" data-size="17 in. x 14 in."
-					data-medium="marker, paint pen, and colored pencil on drawing paper" data-desc=""
-					alt="A nude figure rendered in shades of green, with a rainbow halo effect around their whole body. They are floating with one knee raised and their back to the viewer, turning their head to look over their shoulder. They have an eye on their back, with the words 'SIGNAL LOST' above it. The background consists of multicolored swirls and the words 'SUM OF ALL YOUR BITS'. ">
+					<img src="images/drawing-painting/gateway.jpg" data-title="gateway (2024)"
+						data-size="17 in. x 14 in." data-medium="marker, paint pen, and colored pencil on drawing paper"
+						data-desc=""
+						alt="A nude figure rendered in shades of green, with a rainbow halo effect around their whole body. They are floating with one knee raised and their back to the viewer, turning their head to look over their shoulder. They have an eye on their back, with the words 'SIGNAL LOST' above it. The background consists of multicolored swirls and the words 'SUM OF ALL YOUR BITS'. ">
 
 
-				<img src="images/drawing-painting/rebirth-of-venus.jpg" data-title="(re)birth of venus (2024)"
-					data-size="18 in. x 24 in."
-					data-medium="marker, paint pen, stickers, modeling paste, and collage on watercolor paper"
-					data-desc=""
-					alt="A figure rendered in purple, pink, and blue, with one hand over their chest and another over their crotch. Their chest is covered in foamy water. Surrounding the figure is a collage of drawings, paper elements, and text, the largest of which reads 'YOU HAVE YOUR FATHER'S SMILE AND YOUR MOTHER'S TESTOSTERONE'.">
+					<img src="images/drawing-painting/rebirth-of-venus.jpg" data-title="(re)birth of venus (2024)"
+						data-size="18 in. x 24 in."
+						data-medium="marker, paint pen, stickers, modeling paste, and collage on watercolor paper"
+						data-desc=""
+						alt="A figure rendered in purple, pink, and blue, with one hand over their chest and another over their crotch. Their chest is covered in foamy water. Surrounding the figure is a collage of drawings, paper elements, and text, the largest of which reads 'YOU HAVE YOUR FATHER'S SMILE AND YOUR MOTHER'S TESTOSTERONE'.">
 
-				<img src="images/drawing-painting/goldwin-smith-1.jpg" data-title="goldwin smith #1"
-					data-size="18 in. x 24 in." data-medium="marker and ballpoint pen on newsprint" data-desc=""
-					alt="A loose black and white ink sketch of the interior of Goldwin Smith Hall.">
+					<img src="images/drawing-painting/goldwin-smith-1.jpg" data-title="goldwin smith #1"
+						data-size="18 in. x 24 in." data-medium="marker and ballpoint pen on newsprint" data-desc=""
+						alt="A loose black and white ink sketch of the interior of Goldwin Smith Hall.">
 
-				<img src="images/drawing-painting/goldwin-smith-2.jpg" data-title="goldwin smith #2"
-					data-size="18 in. x 24 in." data-medium="marker and ballpoint pen on newsprint" data-desc=""
-					alt="A loose black and white ink sketch of the interior of Goldwin Smith Hall.">
+					<img src="images/drawing-painting/goldwin-smith-2.jpg" data-title="goldwin smith #2"
+						data-size="18 in. x 24 in." data-medium="marker and ballpoint pen on newsprint" data-desc=""
+						alt="A loose black and white ink sketch of the interior of Goldwin Smith Hall.">
 
-				<img src="images/drawing-painting/blissed-out.jpg" data-title="blissed out (2024)"
-					data-size="8 in. x 11 in." data-medium="acrylic and paint pen on cardboard" data-desc="" alt="A painting on cardboard of a figure being kissed on the neck by another person. The figure is staring up, gasping slightly,
+					<img src="images/drawing-painting/blissed-out.jpg" data-title="blissed out (2024)"
+						data-size="8 in. x 11 in." data-medium="acrylic and paint pen on cardboard" data-desc="" alt="A painting on cardboard of a figure being kissed on the neck by another person. The figure is staring up, gasping slightly,
 						with lipstick smeared over their mouth, resembling blood.">
 
-				<img src="images/drawing-painting/stares-at-you.jpg" data-title="stares at you (2024)"
-					data-size="10 in. x 8 in." data-medium="acrylic, paint pen, and ribbon on cardboard" data-desc=""
-					alt="A painting of a face on cardboard. A piece of off-white ribbon is woven through the cardboard in a crisscross pattern,
+					<img src="images/drawing-painting/stares-at-you.jpg" data-title="stares at you (2024)"
+						data-size="10 in. x 8 in." data-medium="acrylic, paint pen, and ribbon on cardboard"
+						data-desc="" alt="A painting of a face on cardboard. A piece of off-white ribbon is woven through the cardboard in a crisscross pattern,
 						leaving the face's eyes visible.">
 
-				<img src="images/drawing-painting/oil-study-7-30.jpg" data-title="oil pastel study 7-30 (2024)"
-					data-size="14 in. x 11 in." data-medium="oil pastel and colored pencil on toned drawing paper"
-					data-desc=""
-					alt="A woman's face at a three-quarter angle, rendered in shades of pink, blue, and green. A closeup of her eyes cropped to a square is in the upper left corner. In the bottom right of the image,
+					<img src="images/drawing-painting/oil-study-7-30.jpg" data-title="oil pastel study 7-30 (2024)"
+						data-size="14 in. x 11 in." data-medium="oil pastel and colored pencil on toned drawing paper"
+						data-desc=""
+						alt="A woman's face at a three-quarter angle, rendered in shades of pink, blue, and green. A closeup of her eyes cropped to a square is in the upper left corner. In the bottom right of the image,
 					a can of diet coke, a heart-shaped wrapped candy, a lollipop, a bar of soap, and two alien looking creatures are rendered in the same colors as the face.">
-				<img src="images/drawing-painting/cloth-wire.jpg" data-title="cloth / wire (2024)"
-					data-size="12 in. x 12 in."
-					data-medium="acrylic, cotton, tissue paper, wire, yarn, beads, and pins on canvas" data-desc=""
-					alt="A painting of a two faces. The face on the left is a side-profile of a woman with light pink skin and violet hair. She is surrounded by soft, flower-like forms made of tissue paper and cotton, as well as beads.
+					<img src="images/drawing-painting/cloth-wire.jpg" data-title="cloth / wire (2024)"
+						data-size="12 in. x 12 in."
+						data-medium="acrylic, cotton, tissue paper, wire, yarn, beads, and pins on canvas" data-desc=""
+						alt="A painting of a two faces. The face on the left is a side-profile of a woman with light pink skin and violet hair. She is surrounded by soft, flower-like forms made of tissue paper and cotton, as well as beads.
 					On the right is a woman facing forward. She has grey skin, black hair, and black eyes with no iris. Metal wire protrudes in and out of the canvas on her face. Bits of yarn and tissue paper are tied to the wire.">
 
-				<img src="images/drawing-painting/information-age.jpg" data-title="information age (2023)"
-					data-size="14 in. x 11 in."
-					data-medium="acrylic, paint pen, glitter, and beads on canvas" data-desc=""
-					alt="A painting of a figure from the shoulders up. They are rendered in yellow, pink, and blue. Their shoulders are melting into a fluid and flowing upwards. A CD labelled 'my mixtape' covers the right side of their face. They are surrounded by drawings of browser popups and buttons. Two message bubbles in the upper right corner read 'you will live to see manmade horrors beyond your comprehension' and 'you promise?'.">
+					<img src="images/drawing-painting/information-age.jpg" data-title="information age (2023)"
+						data-size="14 in. x 11 in." data-medium="acrylic, paint pen, glitter, and beads on canvas"
+						data-desc=""
+						alt="A painting of a figure from the shoulders up. They are rendered in yellow, pink, and blue. Their shoulders are melting into a fluid and flowing upwards. A CD labelled 'my mixtape' covers the right side of their face. They are surrounded by drawings of browser popups and buttons. Two message bubbles in the upper right corner read 'you will live to see manmade horrors beyond your comprehension' and 'you promise?'.">
 
 
 
-			</div>
-		</section>
-		<section id="illustration">
-			<h3>illustration</h3>
+				</div>
+			</section>
+			<section id="illustration" class="hidden">
+				<h3>illustration</h3>
 
-			<div class="gallery">
+				<div class="gallery">
+					<img src="images/illustration/crow.jpg" data-title="untitled portrait of crow (2025)"
+						data-size="8 in. x 10 in." data-medium="paint pen on canvas" data-desc=""
+						alt="A portrait of a woman, rendered in purple, neon pink, neon orange, neon yellow, and blue. She is topless and leaning against her hand,
+						looking to the right. The background is neon yellow, and the word 'CROW' is written vertically in bright pink block letters on the left side.">
 
-			</div>
-		</section>
-		<section id="graphic-design">
-			<h3>graphic design</h3>
+					<img src="images/illustration/bound-1.jpg" data-title="bound #1 (2025)" data-size="digital"
+						data-medium="made with procreate" data-desc="part 1/2 of my 'bound' diptych." alt="A black and white illustration of a nude woman, tied up and suspended in a reclining position. She has black hair that blends in with the 
+						black background.">
+					<img src="images/illustration/bound-2.jpg" data-title="bound #2 (2025)" data-size="digital"
+						data-medium="made with procreate" data-desc="part 2/2 of my 'bound' diptych"
+						alt="A black and white illustration of a nude figure, tied up and suspended upside down. The figure has visible body hair and stretch marks on their 
+						legs, arms, crotch, and stomach. They have black hair that blends in with the black background, and one of their eyes is closed.">
+					<img src="images/illustration/blink.jpg" data-title="blink (2025)" data-size="digital"
+						data-medium="made with procreate" data-desc="" alt="An anthropomorphic rabbit rendered in shades of grey. They are wearing a black pleated skirt, black fishnets, and a heart shaped earring. They have a black mark on their chest
+						fur in the shape of a heart. The word 'BLINK' is written vertically to their left.">
+					<img src="images/illustration/mallory.jpg" data-title="mallory (2025)" data-size="digital"
+						data-medium="made with procreate" data-desc=""
+						alt="A red-haired woman dancing around a pole. She is wearing a long, off-the-shoulder white dress, with ribbon detailing and several layers of fabric, as well as black boots and fishnet arm warmers. ">
+					<img src="images/illustration/marguerite.jpg" data-title="marguerite (2025)" data-size="digital"
+						data-medium="made with procreate" data-desc=""
+						alt="A black-haired woman posed with her hands on her head and one knee raised, as if mid-step. She is wearing a translucent light grey top, and a denim miniskirt, with gold jewelery, a white hair bow, black boots, and a black belt. To the right of the image, 'marguerite' is written vertically in light grey.">
+					<img src="images/illustration/roommates.jpg" data-title="roommates (2025)"
+						data-size="17 in. x 11 in." data-medium="marker and ballpoint pen on drawing paper" data-desc=""
+						alt="A sketchy black and white illustration of two women cuddling on a couch with their legs intertwined. Both are looking to the right. On the right side of the image, the words 'MAYBE THE REAL RESEARCH WAS THE FRIENDS WE MADE ALONG THE WAY' are writen in black text.">
+					<img src="images/illustration/beebe-lake-1.jpg" data-title="beebe dam from above (2024)"
+						data-size="18 in. x 24 in." data-medium="marker and ballpoint pen on drawing paper" data-desc=""
+						alt="A black and white illustration of Beebe Dam in Ithaca, New York. The surrounding trees and foliage are visible in the background, along with a building. ">
+					<img src="images/illustration/beebe-lake-2.jpg" data-title="beebe lake (2024)"
+						data-size="18 in. x 24in." data-medium="marker and ballpoint pen on drawing paper" data-desc=""
+						alt="A black and white illustration of Beebe Lake in Ithaca, New York. The lake itself is in the background of the image, preceded by a pathway and some trees and foliage.">
+					<img src="images/illustration/data-transfer.jpg" data-title="data transfer (2024)"
+						data-size="11 in. x 24 in."
+						data-medium="alcohol marker, paint pen, and ballpoint pen on newsprint" data-desc=""
+						alt="A person's face takes up the lower left corner of the image. It has cables, buttons, and switches embedded into it. The face is surrounded by abstract, colorful patterns, as well as floating alien-looking creatures. A drawing of a computer pop-up in the corner reads 'TRANSCEND? you can be so much more'. The words 'GET CONNECTED REJECT YOUR FLESH PRISON' are also written in the background of the image.">
+					<img src="images/illustration/madonna-and-freshman.jpg" data-title="madonna and freshman (2024)"
+						data-size="11 in. x 14 in." data-medium="marker and ballpoint pen on drawing paper" data-desc=""
+						alt="A black and white illustration of a woman with another woman in her arms. The woman being held is looking at the viewer, and the woman holding her is draped in a blanket. The image is constrained by a box and anchored to the upper left corner of the image. Surrounding it are drawings of a bow, a lighter, and a knife.">
+					<img src="images/illustration/jude.jpg" data-title="jude (2024)" data-size="11 in. x 14 in."
+						data-medium="oil pastel on drawing paper" data-desc=""
+						alt="A portrait of a man rendered in pastel colors.">
+					<img src="images/illustration/lightning-bug.jpg" data-title="lightning bug (2024)"
+						data-size="digital" data-medium="made with procreate" data-desc=""
+						alt="A young girl with firefly wings, antennae, and an appendage on her back resembling a firefly's lantern. She is sitting in a large jar, holding a smaller jar of fireflies in her hands and looking into it.">
 
-			<div class="gallery">
 
-			</div>
-		</section>
-		<section id="video">
-			<h3>video</h3>
+				</div>
+			</section>
+			<section id="graphic-design" class="hidden">
+				<h3>graphic design</h3>
 
-			<div class="gallery">
+				<div class="gallery">
 
-			</div>
+					<img src="images/graphic-design/love-in-tjaden-hall.png" data-title="love in tjaden hall (2025)" data-size="digital" data-medium="made with illustrator and photoshop"
+						data-desc="" alt="A poster of two women embracing. The image is rendered as black halftone on a pink background. The poster text reads 'CAN WE REALLY FIND LOVE IN TJADEN HALL?'">
+					<img src="images/graphic-design/dichotomy.png" data-title="dichotomy (2025)" data-size="digital" data-medium="made with photoshop"
+						data-desc="made for and published in medium design collective's spring 2025 magazine." alt="">
+					<img src="images/graphic-design/compression.png" data-title="compression (2025)" data-size="digital" data-medium="made with photoshop"
+						data-desc="a postcard made for medium design collective's annual exhibition, RAW." alt="a woman's face in blue and green tones, smeared and pixelated. the word 'compression' is written in the bottom left corner in white text.">
+					<img src="images/graphic-design/bark.png" data-title="BARK (2024)" data-size="digital" data-medium="made with illustrator"
+						data-desc="" alt="">
+					<img src="images/graphic-design/memetics.png" data-title="memetics (2024)" data-size="digital" data-medium="made with illustrator"
+						data-desc="made for and published in medium design collective's fall 2024 magazine." alt="">
+					<img src="images/graphic-design/the-vampyre.jpg" data-title="the vampyre (2024)" data-size="digital" data-medium="made with illustrator"
+						data-desc="" alt="a book cover design for 'the vampyre' by john polidori">
+					<img src="images/graphic-design/carmilla.jpg" data-title="carmilla (2024)" data-size="digital" data-medium="made with illustrator"
+						data-desc="" alt="a book cover design for 'carmilla' by sheridan le fanu">
+					<img src="images/graphic-design/dracula.jpg" data-title="dracula (2024)" data-size="digital" data-medium="made with illustrator"
+						data-desc="" alt="a book cover design for 'dracula' by bram stoker">
+				</div>
+			</section>
+			<section id="video" class="hidden">
+				<h3>video</h3>
 
-		</section>
-		<section id="interactive">
-			<h3>interactive</h3>
+				<div class="gallery">
 
-			<div class="gallery">
+				</div>
 
-			</div>
+			</section>
+			<section id="interactive" class="hidden">
+				<h3>interactive</h3>
+
+				<div class="gallery">
+
+				</div>
+			</section>
 		</section>
 	</main>
 
 	<footer>
 		<p>© 2026 Jupiter Bhanot</p>
 	</footer>
+	<button id="nav-expand"><img src="images/icons/arrow.png"></button>
 
 	<script src="scripts/jquery-3.7.1.min.js"></script>
 	<script src="scripts/gallery.js"></script>
+	<script src="scripts/nav.js"></script>
 </body>
 
 </html>
