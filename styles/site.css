@@ -397,7 +397,6 @@ footer p {
     gap: 5px 5px;
     max-width: 100%;
     margin: auto 60px;
-    padding: 10px;
 
 
 }
@@ -658,7 +657,7 @@ footer p {
     .gallery,
     .vid-gallery {
         width: 100%;
-        margin: auto 0;
+        margin: auto auto;
     }
 
     .gallery-item {

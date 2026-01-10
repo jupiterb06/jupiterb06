@@ -63,3 +63,15 @@ $(".vid-gallery iframe").hover(function (e) {
 }
 );
 
+$(".art-tech-gallery iframe").hover(function (e) {
+    $(e.target).animate({
+        borderRadius: '20px',
+    });        // over
+
+}, function (e) {
+    // out
+        $(e.target).animate({
+        borderRadius: '0px',
+    });  
+}
+);
