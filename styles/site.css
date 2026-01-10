@@ -106,6 +106,12 @@ nav menu {
 nav menu li,
 nav ul li {
     list-style-type: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+nav menu li:hover {
+    scale: 105%;
 
 }
 
@@ -133,6 +139,7 @@ nav menu li a:hover {
     background-color: blue;
     color: white;
     font-style: italic;
+
 
 
 }
@@ -455,7 +462,8 @@ footer p {
 }
 
 .vid-gallery iframe,
-.art-tech-gallery img, .art-tech-gallery iframe {
+.art-tech-gallery img,
+.art-tech-gallery iframe {
     aspect-ratio: 560/315;
     max-width: 40%;
     flex-grow: 1;
@@ -553,6 +561,7 @@ footer p {
         padding: 10px 0;
         text-align: center;
         font-size: 1.5rem;
+        margin: auto 0;
     }
 
 
