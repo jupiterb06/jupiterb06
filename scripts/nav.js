@@ -14,7 +14,7 @@ $("#nav-expand").click(function (e) {
 });
 
 $("#logo-div a").hover(function (e) {
-    $("#logo-div a img").attr("src", "images/name-logo-hover.svg");
+    $("#logo-div a img").attr("src", "/workspaces/jupiterbhanot/images/name-logo-hover.svg"); 
 
     // $("#logo-div a img").animate({
     //     opacity: '0.3'
@@ -29,13 +29,13 @@ $("#logo-div a").hover(function (e) {
     //     opacity: '1'
     // });
     // out
-    $("#logo-div a img").attr("src", "images/name-logo-blue.svg");
+    $("#logo-div a img").attr("src", "/workspaces/jupiterbhanot/images/name-logo-blue.svg");
 
 }
 );
 
 $("#logo-div-2 a").hover(function (e) {
-    $("#logo-div-2 a img").attr("src", "images/name-logo-hover.svg");
+    $("#logo-div-2 a img").attr("src", "/workspaces/jupiterbhanot/images/name-logo-hover.svg");
 
     // $("#logo-div a img").animate({
     //     opacity: '0.3'
@@ -50,7 +50,7 @@ $("#logo-div-2 a").hover(function (e) {
     //     opacity: '1'
     // });
     // out
-    $("#logo-div-2 a img").attr("src", "images/name-logo-blue.svg");
+    $("#logo-div-2 a img").attr("src", "/workspaces/jupiterbhanot/images/name-logo-blue.svg");
 
 }
 );
