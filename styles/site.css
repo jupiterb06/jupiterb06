@@ -9,7 +9,10 @@
 }
 
 html {
-    font-family: 'Didot', 'Times New Roman', Times, serif;
+    font-family: "adobe-caslon-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: 'Didot', 'Times New Roman', Times, serif; */
     scroll-behavior: smooth;
     animation: fadeIn 0.5s ease-in forwards;
     margin: 0;
@@ -128,7 +131,7 @@ nav ul li a {
     border-radius: 50px;
     border: 2px solid blue;
     background-color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-left: 8px;
     margin-right: 8px;
     text-decoration: none;
@@ -146,7 +149,7 @@ nav ul li a:visited {
 nav menu li a:hover {
     background-color: blue;
     color: white;
-    font-style: italic;
+    /* font-style: italic; */
 
 
 
@@ -174,7 +177,8 @@ main {
 
 h2,
 h1 {
-    font-family: serif;
+font-family: "fenway-banner-vf", sans-serif;
+font-variation-settings: "wdth" 120, "wght" 500;
     font-size: 4rem;
 
     margin-block-start: 0;
@@ -394,6 +398,29 @@ footer p {
 
 }
 
+.pageDesc{
+    color: blue;
+    font-size: 2rem;
+    font-style: bold;
+}
+
+
+.jupiterPhoto{
+    /* container-type: inline-size; */
+    max-width: 40%;
+    max-height: 60vh;
+order: 2;
+
+}
+.ASCIIArt{
+    font-size: 0.25cqw;
+        font-family: monospace;
+        color: blue;
+        /* width: 40%; */
+    /* max-height: 60vh; */
+    white-space: pre;
+}
+
 
 
 .gallery {
@@ -481,9 +508,9 @@ footer p {
 }
 
 .about-me img {
-    max-width: 40%;
-    max-height: 60vh;
-    order: 2;
+    max-width: 100%;
+    /* max-height: 60vh;
+        order: 2; */
 }
 
 
