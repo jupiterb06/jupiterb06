@@ -497,8 +497,11 @@ order: 2;
 .vid-gallery iframe,
 .art-tech-gallery img,
 .art-tech-gallery iframe {
-    aspect-ratio: 560/315 !important;
-    max-width: 40%;
+    aspect-ratio: 560/315;
+    /* max-width: 40%; */
+    /* max-height: 30%; */
+    width: 40%;
+    height: 40%;
     flex-grow: 1;
 }
 
