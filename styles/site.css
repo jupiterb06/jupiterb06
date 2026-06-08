@@ -161,6 +161,19 @@ nav ul li a {
 
 }
 
+#jump-to-section li a{
+    border-radius: 50px;
+    border: 2px solid blue;
+    background-color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#jump-to-section li a:hover{
+    background-color: blue;
+
+}
+
 nav menu li a:visited,
 nav ul li a:visited {
     color: blue;
@@ -170,11 +183,10 @@ nav menu li a:hover {
     /* background-color: blue;
     color: white; */
     font-style: italic;
-        background-color: rgba(255, 255, 255, 0) !important;
-
-
-
+        background-color: rgba(255, 255, 255, 0);
 }
+
+
 
 nav menu li a img{
     width: 80px;
