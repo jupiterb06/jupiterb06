@@ -55,6 +55,91 @@ $("#logo-div-2 a").hover(function (e) {
 }
 );
 
+$("#nav-work").hover(function (e) {
+    $("#nav-work img").attr("src", "/images/icons/work-hover.svg");
+
+    // $("#logo-div a img").animate({
+    //     opacity: '0.3'
+    // });
+
+    console.log("hover");
+    // over
+
+}, function () {
+
+    // $("#logo-div a img").animate({
+    //     opacity: '1'
+    // });
+    // out
+    $("#nav-work img").attr("src", "/images/icons/work.svg");
+
+}
+);
+
+
+$("#nav-about").hover(function (e) {
+    $("#nav-about img").attr("src", "/images/icons/about-hover.svg");
+
+    // $("#logo-div a img").animate({
+    //     opacity: '0.3'
+    // });
+
+    console.log("hover");
+    // over
+
+}, function () {
+
+    // $("#logo-div a img").animate({
+    //     opacity: '1'
+    // });
+    // out
+    $("#nav-about img").attr("src", "/images/icons/about.svg");
+
+}
+);
+
+$("#nav-cv").hover(function (e) {
+    $("#nav-cv img").attr("src", "/images/icons/cv-hover.svg");
+
+    // $("#logo-div a img").animate({
+    //     opacity: '0.3'
+    // });
+
+    console.log("hover");
+    // over
+
+}, function () {
+
+    // $("#logo-div a img").animate({
+    //     opacity: '1'
+    // });
+    // out
+    $("#nav-cv img").attr("src", "/images/icons/cv.svg");
+
+}
+);
+
+$("#nav-contact").hover(function (e) {
+    $("#nav-contact img").attr("src", "/images/icons/contact-hover.svg");
+
+    // $("#logo-div a img").animate({
+    //     opacity: '0.3'
+    // });
+
+    console.log("hover");
+    // over
+
+}, function () {
+
+    // $("#logo-div a img").animate({
+    //     opacity: '1'
+    // });
+    // out
+    $("#nav-contact img").attr("src", "/images/icons/contact.svg");
+
+}
+);
+
 const mediaQuery = window.matchMedia("(max-width: 760px)");
 
 function handleDeviceChange(e) {

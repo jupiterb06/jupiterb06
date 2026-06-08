@@ -135,21 +135,29 @@ nav ul li {
 
 nav menu li:hover {
     scale: 105%;
+    background-color: white !important;
 
 }
 
 nav menu li a,
 nav ul li a {
-    border-radius: 50px;
+    /* border-radius: 50px;
     border: 2px solid blue;
     background-color: white;
-    padding: 5px 20px;
     margin-left: 8px;
     margin-right: 8px;
-    text-decoration: none;
+     */
     font-size: 1.15rem;
+    text-decoration: none;
 
     transition: all 0.2s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        padding: 5px 20px;
+
 
 }
 
@@ -159,14 +167,18 @@ nav ul li a:visited {
 }
 
 nav menu li a:hover {
-    background-color: blue;
-    color: white;
-    /* font-style: italic; */
+    /* background-color: blue;
+    color: white; */
+    font-style: italic;
+        background-color: rgba(255, 255, 255, 0) !important;
 
 
 
 }
 
+nav menu li a img{
+    width: 80px;
+}
 
 #nav-expand {
     display: none;
