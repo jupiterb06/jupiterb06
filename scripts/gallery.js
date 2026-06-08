@@ -1,7 +1,13 @@
 
+var distanceFromTop = 0; 
+
+
 $("#close-modal").click(function (e) {
     $("#transparency").addClass("hidden");
     $("body").removeClass("stop-scroll");
+        $("html").removeClass("stop-scroll");
+
+
 
 });
 
@@ -9,15 +15,19 @@ $(document).keydown(function (e) {
     if (e.key == "Escape")
         $("#transparency").addClass("hidden");
     $("body").removeClass("stop-scroll");
+        $("html").removeClass("stop-scroll");
+
+
 
 
 
 });
 
 $(".gallery img").click(function (e) {
+
+
     $("#transparency").removeClass("hidden");
 
-    $("body").addClass("stop-scroll");
 
     $("#modal-img").attr("src", e.target.src);
     $("#modal-img").attr("alt", e.target.alt);
@@ -30,6 +40,14 @@ $(".gallery img").click(function (e) {
 
     $("#modal").scrollTop(0);
 
+    // distanceFromTop = window.scrollY; 
+
+    // console.log(distanceFromTop);
+    // window.scrollTo(0,distanceFromTop);
+    $("body").addClass("stop-scroll");
+        $("html").addClass("stop-scroll");
+
+    
     
 
 });
@@ -74,3 +92,5 @@ $(".art-tech-gallery iframe").hover(function (e) {
     });  
 }
 );
+
+

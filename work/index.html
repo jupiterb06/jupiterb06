@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="/styles/site.css" />
 	<link rel="stylesheet" href="https://use.typekit.net/tfp8php.css">
+
 </head>
 
 <body>
@@ -22,12 +23,37 @@
 		<div id="modal">
 			<div class="modal-content">
 				<img id="modal-img" src="/images/drawing-painting/blissed-out.jpg" alt="">
+
 				<div id="modal-text">
-					<h2 id="work-title">work title</h2>
-					<h3 id="size">size</h3>
-					<h4 id="medium">medium</h4>
-					<p id="desc">description</p>
+					<div class="popup-box-outer" id="title-box">
+						<div class="circles">
+							<div class="circle"></div>
+							<div class="circle"></div>
+
+							<div class="circle"></div>
+						</div>						<div class="popup-box">
+						<h2 id="work-title">work title</h2>
+					</div>
+					</div>
+
+					<div class="popup-box-outer" id="info-box">
+						<div class="circles">
+							<div class="circle"></div>
+							<div class="circle"></div>
+
+							<div class="circle"></div>
+						</div>
+
+						<div class="popup-box" >
+							<h3 id="size">size</h3>
+							<h4 id="medium">medium</h4>
+							<p id="desc">description</p>
+						</div>
+					</div>
+
+
 				</div>
+
 				<button id="close-modal">x</button>
 
 			</div>
@@ -93,7 +119,7 @@
 						data-size="24 in. x 18 in." data-medium="acrylic on canvas" data-desc="" alt="A blue and pink painting of a classical-looking structure, with an elevated bathroom inside. A figure stands outside the structure, 
 						gazing in.">
 
-					<img src="/images/drawing-painting/diary-5-15.jpg" data-title="sacred space (2025)"
+					<img src="/images/drawing-painting/diary-5-15.jpg" data-title="diary entry 5-15 (2025)"
 						data-size="24 in. x 18 in."
 						data-medium="watercolor, colored pencil, paint pen, stickers, and rhinestones on watercolor paper"
 						data-desc=""
@@ -482,10 +508,10 @@
 
 	<script src="/scripts/jquery-3.7.1.min.js"></script>
 	<script src="/scripts/gallery.js"></script>
-		<script src="/scripts/typewriter.js"></script>
-
-	
+	<script src="/scripts/typewriter.js"></script>
 	<script src="/scripts/nav.js"></script>
+
+
 </body>
 
 </html>

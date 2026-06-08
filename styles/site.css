@@ -1,3 +1,13 @@
+
+@font-face{
+    font-family: "VHSGothic";
+    src: 
+    url('../fonts/vhsgothic.woff2') format('woff2'),
+    url('../fonts/vhs-gothic.ttf') format('ttf');
+    font-style: normal;
+    font-display: swap; 
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -7,6 +17,7 @@
         opacity: 1;
     }
 }
+
 
 html {
     font-family: "adobe-caslon-pro", sans-serif;
@@ -32,8 +43,9 @@ body {
     margin: 0;
     margin-top: 10px;
 
-    position: relative;
+    /* position: relative; */
 }
+
 
 header {
     display: flex;
@@ -177,9 +189,7 @@ main {
 
 h2,
 h1 {
-font-family: "fenway-banner-vf", sans-serif;
-font-variation-settings: "wdth" 120, "wght" 500;
-    font-size: 4rem;
+
 
     margin-block-start: 0;
     margin-top: 15px;
@@ -188,8 +198,14 @@ font-variation-settings: "wdth" 120, "wght" 500;
     font-style: italic;
 
 }
+h2{
+font-family: "fenway-banner-vf", sans-serif;
+font-variation-settings: "wdth" 120, "wght" 500;
+    font-size: 4rem;
 
+}
 h1 {
+    font-family: 'VHSGothic', "fenway-banner-vf", serif;
     font-size: 5rem;
     color: white;
 
@@ -318,7 +334,7 @@ footer p {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -333,7 +349,7 @@ footer p {
 }
 
 #modal {
-    background-color: white;
+    background-color: none;
     width: 90%;
     max-height: 90%;
     padding: 30px;
@@ -357,7 +373,9 @@ footer p {
 #modal img {
     max-width: 50%;
     max-height: 80vh;
-    object-fit: contain;
+    object-fit: cover;
+
+    border: 1px solid white;
 
 
 }
@@ -390,11 +408,13 @@ footer p {
 }
 
 #close-modal:hover {
+
     background-color: blue;
     color: white;
     border-radius: 50px;
     border: none;
     padding: 10px 20px;
+
 
 }
 
@@ -433,6 +453,95 @@ order: 2;
     margin: auto 60px;
 
 
+}
+
+#modal-text{
+    position: relative;
+    flex-grow: 1;
+}
+
+
+.popup-box-outer{
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* width: 300px; */
+    height: 30%;
+    width: fit-content;
+    padding: 5px;
+    padding-top:40px;
+    /* margin: 20px; */
+
+
+    position: relative;
+
+
+}
+.popup-box {
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#title-box{
+
+    height: fit-content;
+    min-width: 50%;
+    max-width: 60%;
+    margin-top: 20%;
+
+    margin-bottom: -2%;
+    margin-left: 20px;
+
+    z-index: 10;
+
+}
+
+
+#info-box{
+
+        height: fit-content;
+
+    margin-top: 0;
+    margin-left: 45%;
+
+    z-index: 9;
+}
+
+#size, #medium, #desc{
+    margin: 0 60px;
+}
+
+
+
+
+    .circles {
+
+        display: flex;
+        flex-direction: row;
+
+        /* margin-top: -25px;
+        margin-right: 5px; */
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        z-index: 11;
+    }
+
+    .circle{
+        width: 15px;
+        height: 15px;
+        background-color: none;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 2.5px;
+    }
+
+#work-title{
+    font-size: 2.5rem;
 }
 
 #work-content h2 {
@@ -530,6 +639,8 @@ order: 2;
 
 .stop-scroll {
     overflow: hidden !important;
+    overscroll-behavior: contain;
+    /* position: fixed; */
 }
 
 .stick-to-top {
@@ -740,6 +851,7 @@ order: 2;
         flex-direction: column;
     }
 
+
     #modal-text {
         flex-grow: 1;
 
@@ -753,8 +865,10 @@ order: 2;
 
     }
 
-    #modal h2 {
+    #work-title{
         font-size: 2rem;
+    }
+    #modal h2 {
         margin: auto 0;
     }
 
