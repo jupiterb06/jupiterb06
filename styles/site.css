@@ -28,6 +28,8 @@ html {
     animation: fadeIn 0.5s ease-in forwards;
     margin: 0;
 
+    min-height: 100vh;
+
     overflow-x: hidden;
 
 }
@@ -36,10 +38,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow:1;
+
     width: 100%;
     /* width: 95%;
     margin: 0 auto; */
-    min-height: 100vh;
+    min-height: 180vh;
     margin: 0;
     margin-top: 10px;
 
@@ -261,6 +265,11 @@ h1 {
     margin: 30px 60px;
     cursor: pointer;
 
+    display: block;
+
+    width:fit-content;
+    height: fit-content;
+
     transition: all 0.2s ease-in-out;
 
 
@@ -308,6 +317,23 @@ h3 {
     margin: 30px 60px;
 
 
+}
+
+.additional-info{
+    color: blue;
+    margin: auto 60px;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    font-weight: bold;
+    margin: 30px 60px;
+}
+
+.featured-title{
+    font-family: "VHSGothic";
+    font-size: 3rem;
+    margin-bottom: 30px !important;
+    text-align: right !important;
 }
 
 
@@ -545,10 +571,56 @@ order: 2;
     z-index: 9;
 }
 
+#home-popup{
+    /* height: fit-content; */
+    width: 60%;
+    margin-left: -5%;
+}
+
+#featured-popup{
+    margin-bottom: -55%;
+
+    width: 70%;
+    /* margin-top: -10%; */
+    margin-left: 35%;
+
+    text-align: right;
+}
+
+#featured-popup h2{
+    padding: 30px 60px;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.featured-img{
+    /* max-height: 25vh; */
+    width: 80%;
+    object-fit: contain;
+    /* display: block; */
+    /* margin: auto; */
+    padding-right:60px;
+    /* padding-top: 30px; */
+}
+
+.spacer-div{
+        width: 90%;
+
+}
+.home-text{
+    padding: 5px;
+    padding-bottom: 35px;
+}
+
+#featured-work{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 #size, #medium, #desc{
     margin: 0 60px;
 }
-
 
 
 
@@ -829,7 +901,7 @@ order: 2;
         position: fixed;
         bottom: 20px;
         right: 20px;
-        z-index: 20;
+        z-index: 2000;
     }
 
     #nav-expand img {
