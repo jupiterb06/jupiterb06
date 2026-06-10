@@ -62,6 +62,7 @@ header {
 a:hover {
     background-color: blue;
     color: white;
+    font-style:italic;
 }
 
 header nav {
@@ -184,6 +185,7 @@ nav menu li a:hover {
     color: white; */
     font-style: italic;
         background-color: rgba(255, 255, 255, 0);
+
 }
 
 
@@ -192,11 +194,14 @@ nav menu li a img{
     width: 80px;
 }
 
+
 #nav-expand {
     display: none;
 }
 
-
+.nav-current{
+    text-decoration: underline;
+}
 .current-page {
     background-color: blue !important;
     color: white !important;
