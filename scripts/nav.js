@@ -10,6 +10,9 @@ $("#nav-expand").click(function (e) {
 
     $("#nav-expand").toggleClass("current-page");
 
+        $("body").toggleClass("stop-scroll");
+        $("html").toggleClass("stop-scroll");
+
 
 });
 
