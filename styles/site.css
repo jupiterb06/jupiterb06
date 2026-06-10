@@ -168,10 +168,14 @@ nav ul li a {
     background-color: white;
     margin-left: 8px;
     margin-right: 8px;
+        transition: all 0.2s ease-in-out;
+
 }
 
 #jump-to-section li a:hover{
     background-color: blue;
+    scale: 101%;
+
 
 }
 
@@ -184,7 +188,10 @@ nav menu li a:hover {
     /* background-color: blue;
     color: white; */
     font-style: italic;
-        background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+
+
 
 }
 
