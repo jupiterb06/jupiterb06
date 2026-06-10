@@ -40,12 +40,19 @@
         </nav>
     </header>
     <main>
-        <section id>
+        <section>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
             <h1>contact</h1>
 
-            <form action="https://formspree.io/f/mwvpylew" method="POST" target="hidden_iframe"
+            <div class="popup-box-outer" id="contact-box">
+                <div class="circles">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="popup-box">
+                     <form action="https://formspree.io/f/mwvpylew" method="POST" target="hidden_iframe"
                 onsubmit="location.reload()" id="contact-form">
                 <label>
                     your email:
@@ -61,6 +68,9 @@
                 </label>
                 <button class="btn" type="submit">send →</button>
             </form>
+                </div>
+            </div>
+           
         </section>
     </main>
 
