@@ -50,6 +50,10 @@ body {
     /* position: relative; */
 }
 
+.shorten-body{
+    min-height: 100vh;
+}
+
 
 header {
     display: flex;
