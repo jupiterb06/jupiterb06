@@ -23,7 +23,7 @@ $(document).keydown(function (e) {
 
 });
 
-$(".gallery img").click(function (e) {
+$(".gallery").on ("click", "img", (function (e) {
 
 
     $("#transparency").removeClass("hidden");
@@ -50,7 +50,7 @@ $(".gallery img").click(function (e) {
     
     
 
-});
+}));
 
 $(".gallery img").hover(function (e) {
     $(e.target).animate({
