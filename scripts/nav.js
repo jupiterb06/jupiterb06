@@ -171,7 +171,7 @@ handleDeviceChange(mediaQuery);
 mediaQuery.addEventListener("change", handleDeviceChange);
 
 
-let currentSection = "#painting-drawing";
+let currentSection = "#illustration";
 
 
 $("#jump-to-section li a").click(function (e) {
