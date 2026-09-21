@@ -171,22 +171,45 @@ handleDeviceChange(mediaQuery);
 mediaQuery.addEventListener("change", handleDeviceChange);
 
 
-let currentSection = "#illustration";
+let currentSection = $("#jump-to-section li a.current-page").first().data("section") || "#print-media";
 
+function showSection(targetSection) {
+    if (!targetSection) return;
 
-$("#jump-to-section li a").click(function (e) {
+    const $sections = $("#work-content > section");
+    const $target = $(targetSection);
+
+    if (!$target.length) return;
+
+    $sections.not($target)
+        .stop(true, true)
+        .fadeOut(180, function () {
+            $(this).addClass("hidden");
+        });
+
+    $target
+        .stop(true, true)
+        .removeClass("hidden")
+        .hide()
+        .fadeIn(220);
+
+    $("#jump-to-section li a").removeClass("current-page");
+    $("#jump-to-section li a[data-section='" + targetSection + "']").addClass("current-page");
+
+    currentSection = targetSection;
+}
+
+$("#work-content > section").each(function () {
+    const $section = $(this);
+    if ($section.attr("id") !== currentSection.replace("#", "")) {
+        $section.addClass("hidden");
+    }
+});
+
+showSection(currentSection);
+
+$("#jump-to-section li a").on("click", function (e) {
     e.preventDefault();
-    $(currentSection + "-btn").removeClass("current-page");
-
-
-    $("#work-content section").fadeOut();
-    $(currentSection).addClass("hidden");
-
-    $(e.target.dataset.section).removeClass("hidden");
-
-    $(e.target.dataset.section).fadeIn();
-    currentSection = e.target.dataset.section;
-    $(currentSection + "-btn").addClass("current-page");
-
-
+    const targetSection = $(this).data("section");
+    showSection(targetSection);
 });

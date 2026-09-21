@@ -138,13 +138,15 @@ nav menu {
 nav menu li,
 nav ul li {
     list-style-type: none;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.16s ease-out, background-color 0.16s ease-out;
+    transform-origin: center;
+    will-change: transform;
 
 }
 
 nav menu li:hover {
-    scale: 105%;
     background-color: white !important;
+    transform: scale(1.03);
 
 }
 
@@ -176,14 +178,17 @@ nav ul li a {
     background-color: white;
     margin-left: 8px;
     margin-right: 8px;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.16s ease-out, background-color 0.16s ease-out, color 0.16s ease-out;
+    transform-origin: center;
+    will-change: transform;
+    display: inline-block;
 
 }
 
 #jump-to-section li a:hover{
     background-color: blue;
-    scale: 101%;
-
+    color: white;
+    transform: scale(1.04);
 
 }
 
@@ -265,7 +270,7 @@ h1 {
     font-style: italic;
     font-size: 1.15rem;
     border-radius: 50px;
-    border: none;
+    border: 2px solid transparent;
     padding: 10px 20px;
     margin: 30px 60px;
     cursor: pointer;
@@ -274,8 +279,11 @@ h1 {
 
     width:fit-content;
     height: fit-content;
+    box-sizing: border-box;
+    transform-origin: center;
+    will-change: transform;
 
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.16s ease-out, background-color 0.16s ease-out, color 0.16s ease-out, border-color 0.16s ease-out;
 
 
 }
@@ -284,8 +292,9 @@ h1 {
 .btn:hover {
     background-color: white;
     color: blue;
-    border: 2px solid blue;
+    border-color: blue;
     font-style: normal;
+    transform: scale(1.03);
 
 }
 
@@ -327,6 +336,10 @@ h3 {
 #homepage{
     display: flex;
     flex-direction: column;
+}
+
+#homepage h1 {
+    margin-top: 0;
 }
 
 .additional-info{
@@ -526,6 +539,83 @@ order: 2;
 
 }
 
+.project-section {
+    margin-bottom: 4rem;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 60px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.25rem;
+    /* border: 1px solid blue; */
+    /* background-color: rgba(0, 0, 255, 0.03); */
+}
+
+.project-card:nth-child(even) img {
+    order: 2;
+}
+
+.project-card:nth-child(even) .project-copy {
+    order: 1;
+}
+
+.project-card img {
+    width: min(35%, 420px);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+.project-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-copy h3 {
+    margin: 0 0 1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+.project-copy p {
+    margin: 0 0 1.25rem;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem !important;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.project-btn {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#work-content h2 {
+    /* margin-block-end: 0; */
+    margin: 30px 0;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
 #modal-text{
     position: relative;
     flex-grow: 1;
@@ -586,6 +676,9 @@ order: 2;
     /* height: fit-content; */
     width: 60%;
     margin-left: -5%;
+    margin-top: -20rem;
+    position: relative;
+    /* top: -0.75rem; */
 }
 
 #featured-popup{
@@ -668,6 +761,14 @@ order: 2;
 
 #featured-desc{
     padding-bottom: 30px;
+}
+
+#featured-desc p {
+    margin: 0 60px 1.25rem;
+}
+
+#featured-desc .additional-info {
+    margin: 0 60px 1.5rem;
 }
 
 #size, #medium, #desc{

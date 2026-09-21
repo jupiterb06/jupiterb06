@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>JUPITER BHANOT - about</title>
+	<title>JUPITER BHANOT - projects</title>
 
 	<link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
@@ -32,43 +32,144 @@
 						<img class="logo" src="/images/name-logo.png" alt="Jupiter Bhanot">
 					</a>
 				</div>
-				<li><a href="/work/">work</a></li>
-				<li><a class="current-page" href="/about/">about</a></li>
-				<li><a href="/cv/">cv</a></li>
-				<li><a href="/contact/">contact</a></li>
-
-
+				<li><a href="/work/"><img src="/images/icons/work.svg" alt="">work</a></li>
+				<li><a class="nav-current" id="nav-projects" href="/projects/"><img src="/images/icons/work.svg" alt="">projects</a></li>
+				<li><a href="/about/"><img src="/images/icons/about.svg" alt="">about</a></li>
+				<li><a href="/cv/"><img src="/images/icons/cv.svg" alt="">cv</a></li>
+				<li><a href="/contact/"><img src="/images/icons/contact.svg" alt="">contact</a></li>
 			</menu>
 		</nav>
 	</header>
 	<main>
 		<section id="work-text">
 			<h1>projects</h1>
-            <p class="pageDesc">this page showcases larger projects that i have worked on. to view smaller-scale, individual artworks, please go to my 'artwork' page.</p>
+			<p class="pageDesc">this page showcases larger projects that i have worked on. to view smaller-scale, individual artworks, please go to my <a href="/work/">work</a> page.</p>
 			<nav>
 				<h3>view section...</h3>
 				<menu id="jump-to-section">
-					<li><a id="game-development-btn" href="#painting-drawing"
-							data-section="#game-development">game development</a></li>
+					<li><a class="current-page" id="game-development-btn" href="#game-development" data-section="#game-development">game development</a></li>
 					<li><a id="print-media-btn" href="#print-media" data-section="#print-media">print media</a></li>
 					<li><a id="branding-btn" href="#branding" data-section="#branding">branding</a></li>
 				</menu>
-
 			</nav>
 		</section>
 
 		<section id="work-content">
-            </section>
-    </main>
+			<section id="game-development" class="project-section">
+				<h2>game development</h2>
 
-    	<footer>
+				
+				<div class="project-list">
+
+					<article class="project-card">
+						<img src="/images/graphic-design/beetbox-logo.png" alt="A cartoon beet logo for Beetbox Studios.">
+						<div class="project-copy">
+							<p class="project-meta">desktop game</p>
+							<h3>Phantom Beat-Breakers (2026)</h3>
+							<p>A rhythm-action game where you play as Lyra, an aspiring musician exploring the haunted manor of the long-dead legendary composer Montague Beathaven
+								Dance in time with the beat while fending off spectral adversaries and collecting musical artifacts.</p>
+							<a class="btn project-btn" rel ="external" href="https://gdiac.cs.cornell.edu/gdiac/showcase/games/phantom_beat-breakers/trailer.mp4">view trailer →</a>
+							<a class="btn project-btn" rel="external" href="https://gdiac.cs.cornell.edu/gdiac/showcase/games/phantom_beat-breakers/">download →</a>
+
+						</div>
+					</article>
+
+					 
+
+					<article class="project-card">
+						<img src="/images/game-development/limbo.png" alt="A screenshot of the LIMBO website.">
+						<div class="project-copy">
+							<p class="project-meta">interactive web art</p>
+							<h3>LIMBO (2026)</h3>
+							<p>An experimental web art project investigating psychology, spirituality, and technology. Best experienced on desktop, with all camera permissions allowed.</p>
+							<p>This project was exhibited at Experimental Moving Image (2026) at EyeVee in Ithaca, New York.</p>
+							<!-- <a class="btn project-btn" href="/work/">read more →</a> -->
+							<a class="btn project-btn" rel="external" href="https://jupiterb06.github.io/limbo/">visit LIMBO →</a>
+						</div>
+					</article>
+
+					 
+
+					<article class="project-card">
+						<img src="/images/game-development/primal.png" alt="A screenshot of the Primal Deck website.">
+						<div class="project-copy">
+							<p class="project-meta">interactive web art</p>
+							<h3>The Primal Deck (2026)</h3>
+							<p>An online, video-based oracle deck themed around the dynamics between predator and prey. Best experienced on desktop.</p>
+							<a class="btn project-btn" href="/work/">read more →</a>
+							<a class="btn project-btn" rel="external" href="https://jupiterb06.github.io/primal_oracle/">visit The Primal Deck →</a>
+						</div>
+					</article>
+
+					 
+
+					<article class="project-card">
+						<img src="/images/game-development/nested.png" alt="A screenshot taken from Nested.">
+						<div class="project-copy">
+							<p class="project-meta">virtual reality experience</p>
+							<h3>Nested (2025)</h3>
+							<p>An immersive virtual reality experience created for the Meta Quest headset. Inspired by the Thousand And One Nights. The work interrogates what it
+								means for something to be “virtual” or “real”, and to offer the perspective that our
+								reality is relative and, as the title suggests, nested.</p>
+							<p>This project was exhibited at Interactions (2025) at Cornell University's Center for Teaching Innovation in Ithaca, New York.</p>
+							<a class="btn project-btn" rel="external" href="https://www.youtube.com/watch?v=jsMxnmdi3Q4">view demo →</a>
+							<a class="btn project-btn" rel="external" href="https://github.com/jupiterb06/nested">download Nested →</a>
+						</div>
+					</article>
+
+				
+				</div>
+			</section>
+
+			<section id="print-media" class="project-section">
+				<h2>print media</h2>
+				<div class="project-list">
+					<article class="project-card featured-project">
+						<img src="/images/print-media/Ihopethatyouloveit.png" alt="The cover of I Hope that You Love It.">
+						<div class="project-copy">
+							<p class="project-meta">publication</p>
+							<h3>I Hope that You Love It (2026)</h3>
+							<p>A photo-mag inspired by editorial and boudoir photography. Conceptualized as a series
+								of mock advertisements to explore the impact of gender-affirming care, this project was a collaboration 
+								with four transgender models meant to explore self-actualization, identity, and self-love.
+							</p>
+							<a class="btn project-btn" rel="external" href="https://online.fliphtml5.com/usfqrw/ihopethatyouloveit/#p=1">view →</a>
+						</div>
+					</article>
+
+				</div>
+			</section>
+
+
+			<section id="branding" class="project-section">
+				<h2>branding</h2>
+				<div class="project-list">
+
+					<article class="project-card">
+						<img src="/images/graphic-design/beetbox-logo.png" alt="The Beetbox Studios logo.">
+						<div class="project-copy">
+							<p class="project-meta">branding and promotional materials</p>
+							<h3>Beetbox Studios Branding Assets</h3>
+							<p>Branding and promotional materials for Beetbox Studios and our debut game,
+								Phantom Beat-Breakers. These materials include logos, a promotional poster featuring original art, the game's manual, and inserts for soundtrack CDs. 
+							</p>
+
+							<p>These were all displayed at the 2026 Cornell GDIAC Showcase, where the game was available for visitors
+								to play. A limited number of soundtrack CDs were also given out, with the featured inserts.</p>
+							<a class="btn project-btn" href="/work/">view →</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<footer>
 		<p>© 2026 Jupiter Bhanot</p>
 	</footer>
 	<button id="nav-expand" aria-label="expand navigation">≡</button>
 
 	<script src="/scripts/jquery-3.7.1.min.js"></script>
-	<script src="/scripts/gallery.js"></script>
-	<script src="/scripts/typewriter.js"</script></script>
 	<script src="/scripts/nav.js"></script>
-</body>
-</html>
+	<script src="/scripts/gallery.js"></script>
+	<script src="/scripts/typewriter.js"></script>
