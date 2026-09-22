@@ -37,17 +37,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow:1;
-
     width: 100%;
-    /* width: 95%;
-    margin: 0 auto; */
-    min-height: 180vh;
+    min-height: 100vh;
     margin: 0;
     margin-top: 10px;
-
-    /* position: relative; */
 }
 
 .shorten-body{
@@ -230,7 +223,7 @@ nav menu li a img{
 main {
     width: 80%;
     margin: 0 auto;
-    flex-grow: 1;
+    flex: 1 0 auto;
 }
 
 
@@ -336,6 +329,8 @@ h3 {
 #homepage{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 #homepage h1 {
@@ -400,12 +395,10 @@ hr {
 }
 
 footer {
-
     background-color: blue;
     width: 100%;
     margin-top: 30px;
-
-
+    flex-shrink: 0;
 }
 
 footer p {
@@ -463,6 +456,8 @@ footer p {
 
 
 }
+
+
 
 
 #modal h2 {
@@ -537,6 +532,16 @@ order: 2;
     margin: auto 60px;
 
 
+}
+
+.gallery-static {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 5px 5px;
+    max-width: 100%;
+    margin: auto 60px;
 }
 
 .project-section {
@@ -626,17 +631,13 @@ order: 2;
     background-color: blue;
     border: 1px solid white;
     border-radius: 10px;
-    /* width: 300px; */
-    height: 30%;
+    height: auto;
     width: fit-content;
+    max-width: 100%;
     padding: 5px;
-    padding-top:40px;
-    /* margin: 20px; */
-
-
+    padding-top: 40px;
+    box-sizing: border-box;
     position: relative;
-
-
 }
 .popup-box {
     background-color:white;
@@ -673,29 +674,27 @@ order: 2;
 }
 
 #home-popup{
-    /* height: fit-content; */
-    width: 60%;
-    margin-left: -5%;
-    margin-top: -20rem;
+    width: min(60%, 760px);
+    margin: 0;
     position: relative;
-    /* top: -0.75rem; */
+    z-index: 100;
 }
 
 #featured-popup{
-    margin-bottom: -55%;
-
-    width: 70%;
-    /* margin-top: -10%; */
-    margin-left: 35%;
-
+    position: relative;
+    z-index: 5;
+    top: -330px;
+    width: min(70%, 900px);
+    margin: 0 0 0 auto;
     text-align: left;
+
 }
 
 #featured-popup h2{
     padding: 30px 60px;
     padding-bottom: 0;
     margin: 0;
-    text-align: left;
+    text-align: right !important;
 }
 
 .featured-img{
@@ -821,6 +820,22 @@ order: 2;
     object-position: center;
     overflow: hidden;
     cursor: pointer;
+
+
+}
+
+.wide{
+    height: 60vh !important;
+}
+
+.gallery-static img {
+    /* max-width: 33%; */
+    height: 40vh;
+    flex-grow: 1;
+    object-fit: contain !important;
+    object-position: center;
+    overflow: hidden;
+    /* cursor: pointer; */
 
 
 }

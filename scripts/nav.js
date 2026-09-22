@@ -81,6 +81,29 @@ $("#nav-work").hover(function (e) {
 }
 );
 
+$("#nav-projects").hover(function (e) {
+    $("#nav-projects img").attr("src", "/images/icons/work-hover.svg");
+
+    // $("#logo-div a img").animate({
+    //     opacity: '0.3'
+    // });
+
+    console.log("hover");
+    // over
+
+}, function () {
+
+    if(!$("#nav-projects").hasClass("nav-current")){
+            $("#nav-projects img").attr("src", "/images/icons/work.svg");
+    }
+    //     opacity: '1'
+    // });
+    // out
+
+
+}
+);
+
 
 $("#nav-about").hover(function (e) {
     $("#nav-about img").attr("src", "/images/icons/about-hover.svg");
