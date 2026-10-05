@@ -31,6 +31,8 @@ $(".gallery").on ("click", "img", (function (e) {
 
     $("#modal-img").attr("src", e.target.src);
     $("#modal-img").attr("alt", e.target.alt);
+    $("#modal").toggleClass("modal-wide-image", e.target.naturalWidth > e.target.naturalHeight);
+    $(".modal-content").toggleClass("modal-wide-image", e.target.naturalWidth > e.target.naturalHeight);
 
 
     $("#work-title").text(e.target.dataset.title);
